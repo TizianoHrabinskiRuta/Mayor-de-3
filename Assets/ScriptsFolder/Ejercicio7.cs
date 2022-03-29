@@ -20,7 +20,7 @@ public class Ejercicio7 : MonoBehaviour
 
         int[] SortingArray = new int[3];
         int MaxValue = 0;
-        int IndexOfMaxValue = 0;
+        int IndexOfMaxValueSearcher = 0;
         int FoundIndexOfMaxValue = 0;
              
 
@@ -33,9 +33,9 @@ public class Ejercicio7 : MonoBehaviour
             if (i > MaxValue)
             {
                 MaxValue = i;
-                FoundIndexOfMaxValue = IndexOfMaxValue;
+                FoundIndexOfMaxValue = IndexOfMaxValueSearcher;
             }
-            IndexOfMaxValue++;
+            IndexOfMaxValueSearcher++;
         }
 
         Debug.Log("El numero mayor era " + SortingArray[FoundIndexOfMaxValue]);
