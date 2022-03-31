@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class Ejercicio12 : MonoBehaviour
@@ -32,6 +33,7 @@ public class Ejercicio12 : MonoBehaviour
                 Debug.Log("Insuficiente");
                 break;
         }
+
         
     }
 
