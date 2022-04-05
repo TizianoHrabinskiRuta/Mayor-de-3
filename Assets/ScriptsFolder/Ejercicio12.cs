@@ -13,34 +13,21 @@ public class Ejercicio12 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int IndexFinder = 0;
+       
         int[] SixFinder = new int[4];
-        bool[] IgnoreMarker = new bool[4];
         int SumOfDice = 0;
+
+        SixFinder[0] = Dice1;
+        SixFinder[1] = Dice2;
+        SixFinder[2] = Dice3;
 
         foreach (int i in SixFinder)
         {
-            if(i != 6)
+          if (i == 6)
             {
-                IgnoreMarker[IndexFinder] = true;
+                SumOfDice += i;
             }
-            else
-            {
-                IgnoreMarker[IndexFinder] = false;
-            }
-            IndexFinder++;
-        }
-
-        IndexFinder = 0;
-
-        foreach (bool i in IgnoreMarker)
-        {
-            if (!i)
-            {
-                SumOfDice += SixFinder[IndexFinder];
-            }
-            IndexFinder++;
-        }
+        }   
 
         
 
