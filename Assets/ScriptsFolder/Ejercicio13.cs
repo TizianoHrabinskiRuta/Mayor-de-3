@@ -17,7 +17,7 @@ public class Ejercicio13 : MonoBehaviour
             return;
         }
 
-        Debug.Log("Tendria que cobrar: "((HorasTrabajadas - 40) * 20) + (HorasTrabajadas * Const));
+        Debug.Log("Tendria que cobrar: " + ((HorasTrabajadas - 40) * 20) + (HorasTrabajadas * Const));
     }
 
     // Update is called once per frame
