@@ -44,7 +44,7 @@ public class Ejercicio14 : MonoBehaviour
                 break;
 
             case 'D':
-                Debug.Log(Num1 / Num2;
+                Debug.Log(Num1 / Num2);
                 break;
 
         }
